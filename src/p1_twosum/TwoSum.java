@@ -9,7 +9,7 @@ public class TwoSum {
         int[] result = new int[2];
         Map<Integer, Integer> numToIndex = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            if(numToIndex.containsKey(target - nums[i])) {
+            if (numToIndex.containsKey(target - nums[i])) {
                 result[0] = numToIndex.get(target - nums[i]);
                 result[1] = i;
                 return result;
@@ -20,7 +20,7 @@ public class TwoSum {
     }
 
     public static void main(String[] args) {
-        int[] testArray = new int[]{5, 3, 11, 22, 6};
+        int[] testArray = new int[]{5, 3, 22, 11, 6};
         int[] indices = twoSum(testArray, 28);
         Arrays.stream(indices)
                 .forEach(System.out::println);
