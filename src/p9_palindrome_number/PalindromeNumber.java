@@ -3,8 +3,8 @@ package p9_palindrome_number;
 public class PalindromeNumber {
 
     public static boolean isPalindrome(int x) {
-        String revertedStr = (new StringBuilder(x + "")).reverse().toString();
-        return (x + "").equals(revertedStr);
+        String revertedStr = (new StringBuilder(String.valueOf(x))).reverse().toString();
+        return (String.valueOf(x)).equals(revertedStr);
     }
 
     public static boolean isPalindromeNotUsingString(int x) {
