@@ -20,7 +20,7 @@ public class TwoSum {
     }
 
     public static void main(String[] args) {
-        int[] testArray = new int[]{5, 3, 22, 11, 6, 8, 121, 2};
+        int[] testArray = new int[]{5, 3, 22, 11, 6, 8, 121};
         int[] indices = twoSum(testArray, 28);
         Arrays.stream(indices)
                 .forEach(System.out::println);
