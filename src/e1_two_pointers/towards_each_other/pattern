@@ -1,0 +1,10 @@
+int left = 0, right = arr.length - 1;
+
+while (left < right) {
+    if (условие на arr[left] и arr[right]) {
+        // обработка
+    }
+
+    if (нужно увеличить левый) left++;
+    else if (нужно уменьшить правый) right--;
+}
