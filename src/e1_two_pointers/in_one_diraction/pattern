@@ -1,0 +1,8 @@
+int write = 0;
+for (int read = 0; read < arr.length; read++) {
+    if (условие на arr[read]) {
+        arr[write] = arr[read];
+        write++;
+    }
+}
+// длина нового массива = write
